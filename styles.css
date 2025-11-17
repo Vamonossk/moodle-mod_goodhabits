@@ -304,6 +304,7 @@
 .path-mod-goodhabits .add-new-habit-form label,
 .path-mod-goodhabits .add-new-habit-form input {
     display: inline;
+
 }
 
 .path-mod-goodhabits .add-new-habit-form {
@@ -547,10 +548,6 @@
     .path-mod-goodhabits .simple-view .prev-habit {
         left: -50px;
     }
-
-    .path-mod-goodhabits div.habits-wrapper {
-        width: 90%;
-    }
 }
 
 @media only screen and (max-width: 683px) {
@@ -648,6 +645,10 @@
     .path-mod-goodhabits .simple-view .next-habit {
         right: -32px;
     }
+
+    .path-mod-goodhabits div.habits-wrapper {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 525px) {
@@ -686,7 +687,7 @@
     }
 }
 
-@media only screen and (max-width: 339px) {
+@media only screen and (max-width: 340px) {
     .path-mod-goodhabits .viewport-too-small {
         display: block;
         background-color: #faabab;
@@ -811,12 +812,12 @@
 
 /* Left arrow positioning */
 .path-mod-goodhabits .prev-habit {
-    left: 10px;; /* Position on the left */
+    left: -120px;; /* Position on the left */
 }
 
 /* Right arrow positioning */
 .path-mod-goodhabits .next-habit {
-    right: 10px; /* Position on the right */
+    right: -50px; /* Position on the right */
 }
 
 /* Optional: Hover effect */
@@ -910,14 +911,10 @@
 }
 
 .path-mod-goodhabits .habits-wrapper {
-    /*max-width: 400px;*/
-    width: 90%;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    position: relative;
-    margin: 0 auto;
-    max-width: 480px; /* Adjust as needed */
-    padding: 0 32px; /* Adjust as needed – makes room for arrows */
+    max-width: 400px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -1003,7 +1000,7 @@ body.pagelayout-embedded .activity-header {
     background-color: #fff;
     color: #333;
     /*text-align: center;*/
-    padding: 20px;
+    /*padding: 20px;*/
     border-radius: 12px;
     margin: 20px auto;
     max-width: 600px;
@@ -1028,14 +1025,14 @@ body.pagelayout-embedded .activity-header {
 
 .path-mod-goodhabits .dyk-close-btn {
     width: 24px;
-    height: 24px;
-    background-color: red;
+    /*height: 24px;*/
+    background-color: black;
     color: white;
     font-size: 18px;
     font-family: Arial, sans-serif;
     text-align: center;
     line-height: 21px;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     border-radius: 3px;
     cursor: pointer;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -1053,8 +1050,8 @@ body.pagelayout-embedded .activity-header {
 }
 
 .path-mod-goodhabits .tip-card {
-    background-color: #9d6dd5;
-    color: #fff;
+    background-color: snow;
+    color: #333;
     padding: 15px 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -1216,4 +1213,10 @@ body.pagelayout-embedded .activity-header {
 
 .path-mod-goodhabits .goodhabits-container.review .streak {
     cursor: default;
+}
+/* my addition*/
+form.path-mod-goodhabits * {
+    font-size: 100%;
+    border: none;
+    border-radius: 0.3em;
 }
